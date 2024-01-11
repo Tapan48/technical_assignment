@@ -14,7 +14,7 @@ app.get("/", (req, res) => {
 
 //   app.get("/blog", (req, res) => {
 //     res.send("blog World");
-//   });  
+//   });    
 
 
 
@@ -88,10 +88,10 @@ app.delete('/product/:id', async(req, res) =>{
     }
 })
 
-  mongoose.
+  mongoose.                             /// cluster                     //database
   connect('mongodb+srv://admin:admin123@product-api.rs4rr0c.mongodb.net/products?retryWrites=true&w=majority',
   
-)
+)                 /// cluster,collection
   .then(() => {
       console.log('connected to MongoDB')
       app.listen(3000, ()=> {

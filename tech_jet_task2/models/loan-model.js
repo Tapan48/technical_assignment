@@ -22,4 +22,4 @@ const loanSchema = mongoose.Schema(
 
 const Loan = mongoose.model('Loan', loanSchema);
 
-module.exports = Loan;
+module.exports = Loan;   /// collection

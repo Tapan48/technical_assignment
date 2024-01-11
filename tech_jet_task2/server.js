@@ -50,12 +50,7 @@ app.post('/pay-instalments', async (req, res) => {
         // Assuming payment is done every 1 minute (as mentioned in the description)
         const time = new Date().toLocaleTimeString();
 
-        // const payment = new Payment({
-        //     userId,
-        //     amount,
-        //     paid_status: true, // Assuming payment is successful by default
-        //     time
-        // });
+       
         const payment=await Payment.create(req.body);
 
         await payment.save();
